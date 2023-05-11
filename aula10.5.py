@@ -1,25 +1,25 @@
-# n=int(input("num:"))
-# if n<0:
-#     n=n*-1
-#     print(n)
-# else:
-#     print("O numero é:", n)
+ n=int(input("num:"))
+ if n<0:
+     n=n*-1
+     print(n)
+ else:
+     print("O numero é:", n)
 
 
 # #Leia a idade e diga se pode beber ou se não pode
-# i=int(input("idade:"))
-# if i<18:
-#     print("Não pode beber.")
-# else:
-#     print("Pode beber.")
+ i=int(input("idade:"))
+if i<18:
+     print("Não pode beber.")
+else:
+     print("Pode beber.")
 
 
 #Leia um número e diga se ele é par ou impar
-# n=int(input("Informe o número:"))
-# if n%2==0:
-#     print("O número é par.")
-# else:
-#     print("O número é impar.")
+ n=int(input("Informe o número:"))
+ if n%2==0:
+     print("O número é par.")
+ else:
+     print("O número é impar.")
 
 
 #Leia a idade e diga sobre a votação
@@ -28,27 +28,27 @@
 #entre 18 e 70: obrigatorio
 #maior de 70: facultativo
 
-# i=int(input("Insira a idade:"))
-# if i<16:
-#     print("Não vota.")
-# else:
-#     if i<18:
-#         print("Voto facultativo.")
-#     if (i>=18 and i<=70):
-#         print ("Voto obrigatório")
-#     if i>70:
-#         print("Voto facultativo")
+ i=int(input("Insira a idade:"))
+ if i<16:
+     print("Não vota.")
+ else:
+     if i<18:
+         print("Voto facultativo.")
+     if (i>=18 and i<=70):
+         print ("Voto obrigatório")
+     if i>70:
+         print("Voto facultativo")
 
 
  
-# i=int(input("Insira sua idade:"))
-# if i<16:
-#     print("Não vota.")
-# else:
-#     if (i>=16 and i<18 or i>70):
-#         print ("Voto facultativo.")
-#     if (i>=18 and i<=70):
-#         prints ("voto obrigatório.")
+ i=int(input("Insira sua idade:"))
+ if i<16:
+     print("Não vota.")
+ else:
+     if (i>=16 and i<18 or i>70):
+         print ("Voto facultativo.")
+     if (i>=18 and i<=70):
+         prints ("voto obrigatório.")
 
 
 #Ferias: custa menos de 30?
