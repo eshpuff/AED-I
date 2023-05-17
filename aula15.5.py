@@ -1,65 +1,65 @@
-# #Leia os 3 lados do triângulo e escreva se é um triangulo e que tipo de triangulo é (equilátero, isóceles ou escaleno)
-# L1= float(input("Informe um dos lados do triângulo: "))
-# L2= float(input("Informe o outro lado do triângulo: "))
-# L3= float(input("Informe o último lado do triângulo: "))
-# if (L1+L2) > L3 and (L1+L3) > L2 and (L2+L3) > L1:
-#     print("É triangulo")
-#     if L1 == L2 and L2 == L3:
-#         print("É equilátero")
-#     if (L1 == L2 and L2 != L3) or (L1 == L3 and L3 != L2)  or (L3 == L2 and L2 != L1):
-#         print("É isóceles")
-#     if (L1 != L2 and L2 !=L3) and (L1 != L3):
-#         print("É escaleno")
-# else:
-#     print ("Não é triângulo.")
+# Leia os 3 lados do triângulo e escreva se é um triangulo e que tipo de triangulo é (equilátero, isóceles ou escaleno)
+L1= float(input("Informe um dos lados do triângulo: "))
+L2= float(input("Informe o outro lado do triângulo: "))
+L3= float(input("Informe o último lado do triângulo: "))
+if (L1+L2) > L3 and (L1+L3) > L2 and (L2+L3) > L1:
+    print("É triangulo")
+    if L1 == L2 and L2 == L3:
+        print("É equilátero")
+    if (L1 == L2 and L2 != L3) or (L1 == L3 and L3 != L2)  or (L3 == L2 and L2 != L1):
+        print("É isóceles")
+    if (L1 != L2 and L2 !=L3) and (L1 != L3):
+        print("É escaleno")
+else:
+    print ("Não é triângulo.")
 
 #Ler os três lados de um triângulo e por em ordem crescente
-# L1= float(input("Informe um dos lados do triângulo: "))
-# L2= float(input("Informe o outro lado do triângulo: "))
-# L3= float(input("Informe o último lado do triângulo: "))
+L1= float(input("Informe um dos lados do triângulo: "))
+L2= float(input("Informe o outro lado do triângulo: "))
+L3= float(input("Informe o último lado do triângulo: "))
 
-# if (L1+L2) > L3 and (L1+L3) > L2 and (L2+L3) > L1:
-#     a=0
-#     b=0
-#     c=0
-#     type = ""
-#     if type= "equilátero":
-#     a= L1
-#     b= L2
-#     c= L3
-#     print("A-> "+ str(a))
-#     print("B-> "+ str(b))
-#     print("C-> "+ str(c))
+if (L1+L2) > L3 and (L1+L3) > L2 and (L2+L3) > L1:
+    a=0
+    b=0
+    c=0
+    type = ""
+    if type= "equilátero":
+    a= L1
+    b= L2
+    c= L3
+    print("A-> "+ str(a))
+    print("B-> "+ str(b))
+    print("C-> "+ str(c))
 
-#     if (L1 == L2 and L2 != L3) or (L1 == L3 and L3 != L2)  or (L3 == L2 and L2 != L1):
-#         type= "isóceles"
-#         if (L1 == L2 and L1 > L3):
-#             a= L3
-#             b= L2
-#             c= L1
-#             print("A-> "+ str(a))
-#             print("B-> "+ str(b))
-#             print("C-> "+ str(c))
+    if (L1 == L2 and L2 != L3) or (L1 == L3 and L3 != L2)  or (L3 == L2 and L2 != L1):
+        type= "isóceles"
+        if (L1 == L2 and L1 > L3):
+            a= L3
+            b= L2
+            c= L1
+            print("A-> "+ str(a))
+            print("B-> "+ str(b))
+            print("C-> "+ str(c))
 
-#         if (L1 == L3 and L1 > L2):
-#             a= L2
-#             b= L1
-#             c= L3
-#             print("A-> "+ str(a))
-#             print("B-> "+ str(b))
-#             print("C-> "+ str(c))
+        if (L1 == L3 and L1 > L2):
+            a= L2
+            b= L1
+            c= L3
+            print("A-> "+ str(a))
+            print("B-> "+ str(b))
+            print("C-> "+ str(c))
 
-#         else:
-#             a= L1
-#             b= L2
-#             c= L3
-#             print("A-> "+ str(a))
-#             print("B-> "+ str(b))
-#             print("C-> "+ str(c))
+        else:
+            a= L1
+            b= L2
+            c= L3
+            print("A-> "+ str(a))
+            print("B-> "+ str(b))
+            print("C-> "+ str(c))
 
-#     if (L1 != L2 and L2 !=L3) and (L1 != L3):
-#         type= "escaleno"
-# else:
+    if (L1 != L2 and L2 !=L3) and (L1 != L3):
+        type= "escaleno"
+else:
     print("Não é trângulo.")
 
 
