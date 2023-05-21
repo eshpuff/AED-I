@@ -83,43 +83,58 @@ if gf1 == gf2:
 #  o quanto ele deve pagar de imposto
 
 renda= float(input("Insira o seu rendimento mensal: "))
-modelo= int(input("Se o modelo for sem correção, insira 1. \nSe o modelo for com correção no gov Bolsonaro, insira 2. \nSe o modelo for com correção integral, insira 3. \n"))
+modelo= int(input("Se o modelo for sem correção, insira 1. \nSe o modelo for com correção no gov Bolsonaro, insira 2." ))
 
+#modelo sem correção
+imposto=0
+deduzido=0
 if modelo == 1:
-    if renda <= 1900:
-        print("Isento.")
-    else:
-        if renda < 2800:
-         print("Deve pagar R$142,80.")
-        else:
-            if renda < 4600:
-                print("Deve pagar R$354,80.")
-            else: 
-                if renda > 4600:
-                    print("Deve pagar R$869,36.")
+    if renda <= 1903.98:
+        print("Isento.")    
 
+    if renda <= 2826.65 and renda > 1903.98:
+        imposto = (renda * 7.5)/100
+        deduzido = imposto - 142.80
+        print("O imposto de renda é :",round(deduzido,2))
+
+    if renda <= 3751.05  and renda > 2826.65:
+        imposto=(renda * 15)/100
+        deduzido=imposto-354.80
+        print("O imposto de renda é :",round(deduzido,2))
+
+    if renda <= 4664.68  and renda > 3751.05:
+        imposto = (renda * 22.5)/100
+        deduzido = imposto - 636.13
+        print("O imposto de renda é :",round(deduzido,2))
+	
+    if renda > 4664.68:
+        imposto = (renda * 27.5)/100
+        deduzido = imposto - 869.36
+        print("O imposto de renda é :",round(deduzido,2))
+
+#modelo bozo
 if modelo == 2:
-    if renda <= 2500:
-        print("Isento.")
-    else:
-        if renda < 3700:
-         print("Deve pagar R$187,54.")
-        else:
-            if renda < 6100:
-                print("Deve pagar R$465,95.")
-            else: 
-                if renda > 6100:
-                    print("Deve pagar R$1141,71.")
 
-if modelo == 3:
-    if renda <= 4700:
+	if renda <= 2500.44:
         print("Isento.")
-    else:
-        if renda < 7000:
-         print("Deve pagar R$353,29.")
-        else:
-            if renda < 9200:
-                print("Deve pagar R$877,78.")
-            else: 
-                if renda > 9200:
-                    print("Deve pagar R$1573,80.")
+
+    if renda <= 3712.17 and renda > 2500.44: 
+        imposto = (renda * 7.5)/100
+        deduzido = imposto - 187.54
+        print("O imposto de renda é :",round(deduzido,2))
+
+    if renda <= 4926.14  and renda > 3712.17:
+        imposto = (renda * 15)/100
+        deduzido = imposto - 465.95
+        print("O imposto de renda é :",round(deduzido,2))
+        
+    if renda <= 6125.99  and renda > 4926.14:
+        imposto = (renda * 22.5)/100
+        deduzido = imposto - 835.41
+        print("O imposto de renda é :",round(deduzido,2))
+        
+    if renda > 6125.99:
+        imposto = (renda * 27.5)/100
+        deduzido = imposto - 1141.71
+        print("O imposto de renda é :",round(deduzido,2))
+
